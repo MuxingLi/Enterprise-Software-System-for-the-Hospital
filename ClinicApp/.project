@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ClinicApp1</name>
+	<name>ClinicApp</name>
 	<comment></comment>
 	<projects>
 		<project>ClinicDomain</project>
+		<project>ClinicDTOs</project>
+		<project>ClinicWebService</project>
+		<project>ClinicRepresentations</project>
 		<project>ClinicTest</project>
-		<project>ClinicTest1</project>
+		<project>ClinicBillingService</project>
+		<project>ClinicBillingServiceClient</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

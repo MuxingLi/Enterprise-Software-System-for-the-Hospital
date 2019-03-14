@@ -28,20 +28,38 @@
 					<version>7</version>
 					<defaultLibBundleDir>lib</defaultLibBundleDir>
 					<modules>
-<!-- 						<webModule> -->
-<!-- 							<groupId>edu.stevens.cs548</groupId> -->
-<!-- 							<artifactId>ClinicSoapWebService</artifactId> -->
-<!-- 							<contextRoot>/clinic-soap</contextRoot> -->
-<!-- 						</webModule> -->
-<!-- 						<webModule> -->
-<!-- 							<groupId>edu.stevens.cs548</groupId> -->
-<!-- 							<artifactId>ClinicRestWebService</artifactId> -->
-<!-- 							<contextRoot>/colchis-rest</contextRoot> -->
-<!-- 						</webModule> -->
-<!-- 						<ejbModule> -->
-<!-- 							<groupId>edu.stevens.cs548</groupId> -->
-<!-- 							<artifactId>ClinicService</artifactId> -->
-<!-- 						</ejbModule> -->
+						<webModule>
+							<groupId>edu.stevens.cs548</groupId>
+							<artifactId>ClinicBillingWebApp</artifactId>
+							<contextRoot>/clinic-billing</contextRoot>
+						</webModule>
+						<ejbModule>
+							<groupId>edu.stevens.cs548</groupId>
+							<artifactId>ClinicBillingService</artifactId>
+						</ejbModule>
+						<webModule>
+							<groupId>edu.stevens.cs548</groupId>
+							<artifactId>ClinicResearchWebApp</artifactId>
+							<contextRoot>/clinic-research</contextRoot>
+						</webModule>
+						<ejbModule>
+							<groupId>edu.stevens.cs548</groupId>
+							<artifactId>ClinicResearchService</artifactId>
+						</ejbModule>
+						<webModule>
+							<groupId>edu.stevens.cs548</groupId>
+							<artifactId>ClinicSoapWebService</artifactId>
+							<contextRoot>/clinic-soap</contextRoot>
+						</webModule>
+						<webModule>
+							<groupId>edu.stevens.cs548</groupId>
+							<artifactId>ClinicRestWebService</artifactId>
+							<contextRoot>/clinic-rest</contextRoot>
+						</webModule>
+						<ejbModule>
+							<groupId>edu.stevens.cs548</groupId>
+							<artifactId>ClinicService</artifactId>
+						</ejbModule>
 						<ejbModule>
 							<groupId>edu.stevens.cs548</groupId>
 							<artifactId>ClinicInit</artifactId>
@@ -77,38 +95,66 @@
 			<groupId>edu.stevens.cs548</groupId>
 			<artifactId>ClinicDomain</artifactId>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>edu.stevens.cs548</groupId> -->
-<!-- 			<artifactId>ClinicDTOs</artifactId> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicDTOs</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>edu.stevens.cs548</groupId>
 			<artifactId>ClinicInit</artifactId>
 			<type>ejb</type>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>edu.stevens.cs548</groupId> -->
-<!-- 			<artifactId>ClinicSoapWebService</artifactId> -->
-<!-- 			<type>war</type> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>edu.stevens.cs548</groupId> -->
-<!-- 			<artifactId>ClinicRepresentations</artifactId> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>edu.stevens.cs548</groupId> -->
-<!-- 			<artifactId>ClinicRestWebService</artifactId> -->
-<!-- 			<type>war</type> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>edu.stevens.cs548</groupId> -->
-<!-- 			<artifactId>ClinicService</artifactId> -->
-<!-- 			<type>ejb</type> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>edu.stevens.cs548</groupId> -->
-<!-- 			<artifactId>ClinicServiceClient</artifactId> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicSoapWebService</artifactId>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicRepresentations</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicRestWebService</artifactId>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicService</artifactId>
+			<type>ejb</type>
+		</dependency>
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicServiceClient</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicBillingServiceClient</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicBillingService</artifactId>
+			<type>ejb</type>
+		</dependency>
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicBillingWebApp</artifactId>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicResearchServiceClient</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicResearchService</artifactId>
+			<type>ejb</type>
+		</dependency>
+		<dependency>
+			<groupId>edu.stevens.cs548</groupId>
+			<artifactId>ClinicResearchWebApp</artifactId>
+			<type>war</type>
+		</dependency>
 <!-- 		<dependency> -->
 <!-- 			<groupId>edu.stevens.cs548</groupId> -->
 <!-- 			<artifactId>ClinicWebApp</artifactId> -->
